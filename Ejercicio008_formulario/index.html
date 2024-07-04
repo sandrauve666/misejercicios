@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="principal">
+        <div>
+            <input id="iEmail" placeholder="Email">
+        </div>
+        <div>
+            <input id="iPassword" placeholder="Password">
+        </div>
+        <div>
+            <button onclick="validar()">Validar</button>
+        </div>
+        <div id="iValidacion">Validación</div>
+    </div>
+</body>
+</html>
+<script>
+    function validar()
+    {
+        let email=document.getElementById("iEmail").value;
+        //let password = document.getElementById("iPassword").value;
+        let password = document.querySelector("#iPassword").value;
+        if (email.indexOf("@")<0)
+        {
+            console.error("El email no tiene arroba");
+        }
+    }
+</script>

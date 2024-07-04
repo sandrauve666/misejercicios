@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de variables</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    /*let n1 = 100;
+    let n2 = 90;
+    n3 = 80;*/
+    {
+        let n1 = 100;
+    }
+    {
+        var n2 = 90;
+    }
+    {
+        n3 = 80;
+    }
+    //console.log(n1); //decía "FIN"
+    console.log(typeof(n1));
+    console.log(typeof(n2));
+    console.log(n3);
+
+    let nombre1 = "Alba";
+    let nombre2 = new String("Angel");
+    let nombre3 = String("Iván"); //Notación de JS, esto es un objeto de tipo String, no es necesario que lleve lo del NEW. 
+
+    console.log(typeof nombre1);
+    console.log(typeof nombre2);
+    console.log(typeof nombre3);
+    console.log(nombre2)
+
+    let nombre = "Sandra"
+    
+    let frase = "A mí me gusta la gasolina";
+    frase2 = frase.split(" ")
+    console.log(frase2);
+    //console.log(frase.split(" "));
+
+    frase3 = frase2.join("|");
+    console.log(frase3);
+
+    frase4 = frase.replace("a", "e");
+    console.log(frase4);
+
+    frase5 = frase.replaceAll("a", "e");
+    console.log(frase5);
+
+    frase6 = frase.indexOf("A");
+    console.log(frase6);
+
+    frase7 = frase.indexOf("z");
+    console.log(frase7);
+
+</script>
