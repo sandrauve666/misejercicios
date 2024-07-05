@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadorimc.js"></script>
+</head>
+
+<body>
+    <div id="principal">
+        <div class="contenido">
+            <input type="text" name="" id="iNombre" placeholder="Nombre">
+            
+        </div>
+        <span class="error" id="error-nombre"></span>
+        <div class="contenido">
+            <input type="number" name="" id="iEdad" placeholder="Edad">
+        </div>
+        <span class="error" id="error-edad"></span>
+        <div class="contenido">
+            <input type="number" name="" id="iAltura" placeholder="Altura">
+        </div>
+        <span class="error" id="error-altura"></span>
+        <div class="contenido">
+            <input type="number" name="" id="iPeso" placeholder="Peso">
+        </div>
+        <span class="error" id="error-peso"></span>
+        <div class="contenido">
+            <!--<button onclick="alert('Calculando')">Calcular</button>-->
+            <button onclick="calcular()">Calcular</button>
+        </div>
+        <div id="resultado" class="contenido">
+            Resultado
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function calcular()
+    {
+        //console.log("loquesea");
+        /*let altura = document.getElementById("iAltura").value;
+        let peso = document.getElementById("iPeso").value;
+        let imc = calcularIMC(peso, altura);
+        console.log(imc);
+
+        document.getElementById("resultado").innerHTML = imc;*/
+
+        let nombre = document.querySelector("#iNombre").value;
+        let edad = document.querySelector("#iEdad").value;
+        let altura = document.querySelector("#iAltura").value;
+        let peso = document.querySelector("#iPeso").value;
+
+        if (nombre.length < 3)
+        {
+            escribirError("El nombre contiene menos de 3 caracteres", "#error-nombre");
+        }
+        else if (edad < 18)
+        {
+            escribirError("La edad debe ser mayor o igual a 18", "#error-edad");
+        }
+        else if (altura < 1 || altura > 2.50)
+        {
+            escribirError("La altura debe ser entre 1m y 2.50m", "#error-altura");
+        }
+        else if (peso < 40)
+        {
+            escribirError("El peso debe ser mayor a 40", "#error-peso");
+        }
+        else
+        {
+            let imc = calcularIMC(peso, altura);
+            document.getElementById("resultado").innerHTML = imc;
+        }
+    }
+    function escribirError(mensaje, identificador)
+    {
+        document.querySelector(identificador).innerHTML=mensaje;
+    }
+</script>
