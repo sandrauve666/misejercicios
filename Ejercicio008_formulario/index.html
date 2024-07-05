@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="principal">
+    <div id="container">
         <div>
-            <input id="iEmail" placeholder="Email">
+            <input id="iEmail" placeholder="Email" value="sandritabest@gmail.com">
+            <!--<span class="error" id="error-email">Error email</span>-->
+            <span class="error" id="error-email"></span>
         </div>
         <div>
             <input id="iPassword" placeholder="Password">
+            <!--<span class="error" id="error-password">Error password</span>-->
+            <span class="error" id="error-password"></span>
         </div>
         <div>
             <button onclick="validar()">Validar</button>
@@ -26,9 +31,45 @@
         let email=document.getElementById("iEmail").value;
         //let password = document.getElementById("iPassword").value;
         let password = document.querySelector("#iPassword").value;
+        //Validación email.
         if (email.indexOf("@")<0)
         {
-            console.error("El email no tiene arroba");
+            //console.error("El email no tiene arroba");
+            //document.querySelector("#error-email").innerHTML="El email no tiene arroba";
+            escribirError("Falta el símbolo @", "#error-email");
         }
+        //else if (email.indexOf(".")<0)
+        else if (email.includes(".")==false) //Equivalente a (!email.includes("."))
+        {
+            //console.error("El email no tiene punto");
+            //document.querySelector("#error-password").innerHTML="El email no tiene punto";
+            escribirError("Falta el símbolo .", "#error-email");
+        }
+        else if (email.length <=5) //Length es un atributo, no una función, por lo que no lleva ().
+        {
+            escribirError("Longitud menor a 5", "#error-email");
+        }
+        else
+        {
+            escribirError("","#error-email");
+        }
+        //Validación password.
+        if (password.toUpperCase().includes("A"))
+        {
+            escribirError("La password no puede contener a o A", "#error-password");
+        }
+        else if (password.length < 7)
+        {
+            escribirError("La password debe tener más de 6 caracteres", "#error-password");
+        }
+        //else if (password.toUpperCase().includes("IBM"))
+        else if (/[Ii][Bb][Mm]/.test(password))
+        {
+            escribirError("La password no puede contener IBM", "#error-password");
+        }
+    }
+    function escribirError(mensaje, identificador)
+    {
+        document.querySelector(identificador).innerHTML=document.querySelector(identificador).innerHTML+mensaje
     }
 </script>

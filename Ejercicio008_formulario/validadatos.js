@@ -1,6 +1,8 @@
 function validaEmail(email, password)
 {
-    if (email.indexOf("@"))
+    if (email.indexOf("@")>=0){
+        
+    }
 
     //let emailOK = true
 }
