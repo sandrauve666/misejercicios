@@ -10,6 +10,7 @@ document.querySelector("#bAgregar").addEventListener("click", (event) => {
         imagenO: imagen
     }
     gatitos.push(gatito);
+    guardarGatitos(gatitos);
 })
 
 function guardarGatitos(gatitos)
@@ -19,9 +20,9 @@ function guardarGatitos(gatitos)
         htmlGatitos += `<div class="kitty">
                             <div class="raza-gatito">${gatito.razaO}</div>
                             <div class="origen-gatito">${gatito.origenO}</div>
-                            <div class="imagen-gatito">${gatito.imagenO}</div>
-                        </div>"`
+                            <div class="imagen-gatito"><img src="${gatito.imagenO}"></div>
+                        </div>`
 
-    })
-    document.querySelector("#michis").innerHTML="htmlGatitos";
+    });
+    document.querySelector("#michis").innerHTML=htmlGatitos;
 }

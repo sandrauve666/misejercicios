@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego</title>
+    <script src = "player.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="600" style="border: 1px solid #000000;">
+
+    </canvas>
+</body>
+</html>
+<script>
+    //Para dibujar un rectángulo.
+    let c=document.querySelector("#myCanvas");
+    let ctx = c.getContext("2d");
+    /*ctx.beginPath();
+    ctx.rect(20,20,150,100);
+    ctx.stroke();*/
+    let p1 = new Player("pikachu.png", 0, 0, 3);
+</script>
