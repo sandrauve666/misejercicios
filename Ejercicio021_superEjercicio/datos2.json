@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Call of Duty",
+        "plataforma": "PS4",
+        "fecha": 1999,
+        "localidad": {
+            "ciudad": "Los Ángeles",
+            "pais": "Estados Unidos"
+        }
+    },
+    {
+        "titulo": "Los Simpsons",
+        "plataforma": "Xbox 360",
+        "fecha": 2002,
+        "localidad": {
+            "ciudad": "Madrid",
+            "pais": "España"
+        }
+    }
+]

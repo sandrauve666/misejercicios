@@ -43,14 +43,14 @@ else {
 
 /* SWITCH */
 
-let tipoContrato = 0;
+let tipoContrato = 2;
 
 switch(tipoContrato){
     case 1:
         console.log("Tipo 1");
         break;
-    case 2, 0:
-        console.log("Tipo 2 ó 0");
+    case 2:
+        console.log("Tipo 2");
         break;
     case 3:
         console.log("Tipo 3");
