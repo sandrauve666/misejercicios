@@ -1,0 +1,50 @@
+[
+    {
+        "titulo": "waka waka",
+        "genero": "Pop",
+        "disco": "Listen Up The Official 2010 Fifa",
+        "annio": 2010,
+        "duracion": 3.22,
+        "portada": "https://m.media-amazon.com/images/I/51JslXVw2ML._UF894,1000_QL80_.jpg",
+        "cantante": {
+            "nombre": "Shakira",
+            "nacionalidad": "Colombiana"
+        }
+    },
+    {
+        "titulo": "Let it be",
+        "genero": "Rock",
+        "disco": "Let it be",
+        "annio": 1970,
+        "duracion": 3.50,
+        "portada": "https://pics.filmaffinity.com/Let_It_Be-635523055-mmed.jpg",
+        "cantante": {
+            "nombre": "The Beatles",
+            "nacionalidad": "Ingleses"
+        }
+    },
+    {
+        "titulo": "Butter",
+        "genero": "Kpop",
+        "disco": "Butter",
+        "annio": 2021,
+        "duracion": 2.45,
+        "portada": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/351a58120116611.60abaf9a9821f.jpg",
+        "cantante": {
+            "nombre": "Bts",
+            "nacionalidad": "Corea del sur"
+        }
+    },
+    {
+        "titulo": "Fresa Salvaje",
+        "genero": "Balada",
+        "disco": "Solo un hombre",
+        "annio": 1972,
+        "duracion": 2.34,
+        "portada": "https://i.pinimg.com/474x/de/cb/9b/decb9b70baa94b61339ba09737786bbf.jpg",
+        "cantante": {
+            "nombre": "Camilo Sesto",
+            "nacionalidad": "Español"
+        }
+    }
+]

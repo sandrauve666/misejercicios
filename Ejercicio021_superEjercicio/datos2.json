@@ -6,7 +6,8 @@
         "localidad": {
             "ciudad": "Los Ángeles",
             "pais": "Estados Unidos"
-        }
+        },
+        "caratula": "https://image.api.playstation.com/cdn/EP0002/CUSA05284_00/AjQI2lgc16r3Zjf2q8QW2pvIce4fuM7F.png"
     },
     {
         "titulo": "Los Simpsons",
@@ -15,6 +16,7 @@
         "localidad": {
             "ciudad": "Madrid",
             "pais": "España"
-        }
+        },
+        "caratula": "https://pbs.twimg.com/media/EU3hYvpWsAAK7u-.png"
     }
 ]

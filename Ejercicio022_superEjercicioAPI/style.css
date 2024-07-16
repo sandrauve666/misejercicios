@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#series {
+    display: flex;
+    flex-wrap: wrap;
+}
+.serie {
+    border : 5px solid color #ddd; 
+}
