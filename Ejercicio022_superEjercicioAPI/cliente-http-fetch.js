@@ -8,7 +8,7 @@ function getBatmanes(url) {
 
 function mostrarDatos(datos) {
     let series = JSON.parse(datos);
-    series.forEach(serie => {
+    series.Search.forEach(serie => {
         let ficha = `<div class="serie">
             <div class="title">${serie.Title}</div>
             <div class="year">${serie.Year}</div>
