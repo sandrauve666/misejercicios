@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de elementos en DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let encabezado = document.createElement("h1"); //let sandia = document.createElement("h1"); //sandia
+    document.querySelector("body").appendChild(encabezado); //document.querySelector("body").appendChild(sandia); //Quiero que sandia sea hijo de body. Esto permite que el h1 sea creado en el body, sino, es una sandía lanzada.
+
+    let textoEncabezado = document.createTextNode("Sección Principal"); //let melon = document.createTextNode("Sección Principal"); //melon
+    encabezado.appendChild(textoEncabezado); //sandia.appendChild(melon);
+
+    let atributoEncabezado = document.createAttribute("class");
+    atributoEncabezado.value = "rojo";
+    encabezado.setAttributeNode(atributoEncabezado);
+    //Creación de atributo mediante método setAttribute.
+    encabezado.setAttribute("id", "encabezado1");
+    setInterval(() => {
+        //Así se hacía en los 80, 90.
+        /*if (atributoEncabezado.value === "rojo") {
+            atributoEncabezado.value = "verde";
+        } else {
+            atributoEncabezado.value = "rojo";
+        }*/
+        //En la actualidad.
+        atributoEncabezado.value = (atributoEncabezado.value==="verde") ? "rojo" : "verde";
+        
+    }, 3000);
+</script>
